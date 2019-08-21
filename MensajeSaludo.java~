@@ -1,0 +1,5 @@
+public class MensajeSaludo {
+    public void saludos() {
+	System.out.println ("Saludos al grupo POO");
+    }
+}

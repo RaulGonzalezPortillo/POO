@@ -1,0 +1,6 @@
+public class ClaseBienvenida {
+    public static void main (String args[]) {
+	MensajeSaludo Objeto1 = new MensajeSaludo ();
+	Objeto1.saludos();
+    }
+}
