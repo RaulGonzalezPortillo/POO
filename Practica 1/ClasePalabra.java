@@ -1,4 +1,3 @@
-
 public class ClasePalabra {
   public void tamanoPalabra(String PalabraRecibida) {
     int Longitud = PalabraRecibida.length();
