@@ -6,9 +6,10 @@ public class ContenedorClaseMediaFrecuencia
   public static void main (String[] args)
   {
     int Lector, Temp;
-    ClaseMedia objetoMedia = new ClaseMediaFrecuencia ();
+    ClaseMediaFrecuencia objetoMedia = new ClaseMediaFrecuencia ();
     System.out.println ("Ingrese la cantidad de números a leer");
     int Cantidad = scan.nextInt ();
+    int Arreglo [] = new int [Cantidad];
     System.out.println ("Ingrese los siguientes valores");
     System.out.println ("Valor 1:");
     Arreglo [0] = scan.nextInt ();
@@ -20,9 +21,15 @@ public class ContenedorClaseMediaFrecuencia
       {
         if (Arreglo [j] > Arreglo [i])
         {
-          Temp = 
+          Temp = Arreglo [j];
+          Arreglo [j] = Arreglo [i];
+          Arreglo [i] = Temp;
         }
       }
+    }
+    for (int i = 0; i < Cantidad; i ++)
+    {
+      System.out.println (Arreglo [i]);
     }
     objetoMedia.calcularMedia (Arreglo, Cantidad);
     System.out.println ("La media aritmética es = " + objetoMedia.getMedia ());

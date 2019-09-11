@@ -5,12 +5,12 @@ public class ClaseMediaFrecuencia
   {
     for (int i = 0; i < Cantidad; i ++)
     {
-      Media += Arreglo [i];
+      MediaFrecuencia += Arreglo [i];
     }
-    Media /= Cantidad;
+    MediaFrecuencia /= Cantidad;
   }
   public double getMedia ()
   {
-    return Media;
+    return MediaFrecuencia;
   }
 }
