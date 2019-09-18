@@ -79,8 +79,8 @@ public class ClaseMediaFrecuencia
     CantidadDividida = Cantidad / 2;
     if (Par)
     {
-      System.out.println ((Arreglo [CantidadDividida - 1]) + " " + (Arreglo [CantidadDividida]));
-      Mediana = (double)(((Arreglo [CantidadDividida - 1]) + (Arreglo [CantidadDividida]) / 2));
+      Mediana = (Arreglo [CantidadDividida - 1]) + (Arreglo [CantidadDividida]);
+      Mediana = (double) Mediana / 2;
     }
     else
     {
