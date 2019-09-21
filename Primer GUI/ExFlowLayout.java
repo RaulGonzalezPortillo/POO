@@ -8,7 +8,7 @@ import javax.swing.JTextField;
 class ExFlowLayout extends JPanel
 {
   public ExFlowLayout () {
-    setSize (600, 200);
+    setSize (700, 200);
     setBackground (Color.yellow);
     JLabel etiqueta = new JLabel ("Nombre: ");
     etiqueta.setToolTipText ("Nombre del usuario");
