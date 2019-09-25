@@ -19,5 +19,12 @@ public class FrameFiguras extends JFrame
     this.add(Entradas);
     PanelResultados Resultados = new PanelResultados ();
     this.add(Resultados);
+    ManejadorEventosFiguras Manejador = new ManejadorEventosFiguras();
+    PanelEntradas.calculaAreaCuadro.addActionListener(Manejador);
+    PanelEntradas.calculaVolumenCubo.addActionListener(Manejador);
+    PanelEntradas.calculaAreaTriangulo.addActionListener(Manejador);
+    PanelEntradas.calculaVolumenPiramide.addActionListener(Manejador);
+    PanelEntradas.calculaAreaRectangulo.addActionListener(Manejador);
+    PanelEntradas.calculaVolumenPrismaRectangular.addActionListener(Manejador);
   }
 }
