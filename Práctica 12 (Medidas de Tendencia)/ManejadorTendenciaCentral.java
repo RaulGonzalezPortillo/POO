@@ -45,7 +45,7 @@ public class ManejadorTendenciaCentral implements ActionListener
         for (int Fila = 0; Fila < FrameTendencias.Datos.length; Fila++)
         {
           Resultado += Double.parseDouble(String.valueOf(FrameTendencias.Tabla.getValueAt(Fila, 1)));
-          //getValueAt regresa un objeto, el cual puede ser asignado a una String, el cual después puede ser convertido a un Double para trabajarlo.
+          //getValueAt regresa un objeto, el cual puede ser asignado a una String con valueOf, el cual después puede ser convertido a un Double para trabajarlo.
           //Ya sé...está horrible xD.
         }
         Resultado /= FrameTendencias.Datos.length;
