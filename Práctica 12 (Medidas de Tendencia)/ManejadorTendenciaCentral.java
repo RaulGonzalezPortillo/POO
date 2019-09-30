@@ -12,7 +12,9 @@ public class ManejadorTendenciaCentral implements ActionListener
     {
       try
       {
-        int Numero1 = Integer.parseInt(EntradasTendenciaCentral.CantidadValores.getText().substring(0,2));
+        FrameTendencias.PanelTabla.removeAll();
+
+        int Numero1 = Integer.parseInt(EntradasTendenciaCentral.CantidadValores.getText().toString());
         FrameTendencias.Datos = new String[Numero1][2];
 
         for(int Fila = 0; Fila < FrameTendencias.Datos.length; Fila++)
