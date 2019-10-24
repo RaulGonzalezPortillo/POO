@@ -6,6 +6,8 @@ import java.text.SimpleDateFormat;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
+import java.io.PrintWriter;
+import java.io.File;
 
 public class ManejadorFormulario implements ActionListener
 {
@@ -132,11 +134,15 @@ public class ManejadorFormulario implements ActionListener
           ArregloPacientes.add(new Paciente(ApellidoPaternoMedico, ApellidoMaternoMedico, NombresMedico, DiaConsulta, MesConsulta, AñoConsulta, ApellidoPaternoPaciente,
           ApellidoMaternoPaciente, NombresPaciente, Sexo, DiaNacimiento, MesNacimiento, AñoNacimiento, Edad, Calle, NumeroExterior, NumeroInterior, Zona, Delegacion,
           CodigoPostal, TelefonoFijo, TelefonoMovil, AñosVividos, MesesVividos, EntidadOrigen, EstadoCivil, NivelEstudios, SabeLeer, SabeEscribir, Ocupacion, Religion));
+          PrintWriter pw = new PrintWriter("Salida.txt");
           for(int i = 0; i < ArregloPacientes.size(); i++)
           {
             System.out.println("Paciente: " + (i + 1));
+            pw.println("Paciente: " + (i + 1));
             System.out.println(ArregloPacientes.get(i).Impresion());
+            pw.println(ArregloPacientes.get(i).Impresion());
           }
+          pw.close();
         }
       }
       catch(Exception E)

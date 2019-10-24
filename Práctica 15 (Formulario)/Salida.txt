@@ -1,0 +1,20 @@
+Paciente 1
+Nombre Médico: Nombre Paterno Materno
+Fecha de evaluación: 1/1/2000
+Nombre Paciente: Nombre Paterno Materno
+Séxo: Hombre
+Fecha de nacimiento: 1/1/2000
+Edad: 0
+Dirección: Calle # Ext.: 1, # Int.: 1, Zona: 1, Delegación: Delegación
+Código postal: 1
+Teléfono fijo: 1
+Teléfono móvil: 1
+Tiempo vivido en último domicilio: 1 Año(s), 1 Mes(es)
+Entidad de origen: Entidad
+Estado Civil: Casado
+Nivel de estudio (en años): 0
+Sabe leer: Sí
+Sabe escribir: Sí
+Ocupación: Desempleado
+Religión: Ninguna
+
