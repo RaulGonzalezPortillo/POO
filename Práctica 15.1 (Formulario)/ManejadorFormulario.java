@@ -235,6 +235,14 @@ public class ManejadorFormulario implements ActionListener
         Zona = Integer.parseInt(EntradasFormulario.CuadroZona.getText().toString());
         AñosVividos = Integer.parseInt(EntradasFormulario.CuadroAñosVividos.getText().toString());
         MesesVividos = Integer.parseInt(EntradasFormulario.CuadroMesesVividos.getText().toString());
+
+        if(Edad < AñosVividos)
+        {
+          JOptionPane.showMessageDialog(null, "No creo que haya vivido en el mismo lugar tanto tiempo (Su edad es menor al tiempo vivido)", "Error de entrada", JOptionPane.ERROR_MESSAGE);
+          Error = 1;
+          return;
+        }
+
         EstadoCivil = EntradasFormulario.GrupoEstadoCivil.getSelection().getActionCommand();
 
         NivelEstudios = Integer.parseInt(EntradasFormulario.GrupoNivelEstudios.getSelection().getActionCommand());
